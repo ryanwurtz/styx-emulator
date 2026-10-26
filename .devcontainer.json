@@ -1,7 +1,8 @@
 {
   "image": "ghcr.io/styx-emulator/styx-emulator/styx-ci:main",
   "mounts": [
-    "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind"
+    "source=/var/run/docker.sock,target=/var/run/docker.sock,type=bind",
+    "source=/home/ryanw/cerias-fr60-sdk,target=/mnt/fr60-sdk,type=bind"
   ],
   "containerEnv": {
     "IN_CONTAINER": "1"
